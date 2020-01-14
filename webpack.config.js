@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin }= require('clean-webpack-plugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: {
@@ -22,10 +23,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.vue?$/,
+        exclude: [path.resolve(__dirname, 'node_modules')],
+        loader: 'vue-loader',
+      },
+      {
         test: /\.(js|jsx)?$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
         loader: 'babel-loader',
-      }
+      },
     ],
   },
   node: {
@@ -45,6 +51,7 @@ module.exports = {
       /(.+)?angular(\\|\/)core(.+)?/,
       path.resolve(__dirname, '../src'),
     ),
+    new VueLoaderPlugin()
   ],
   devtool: 'source-map',
   externals: [],

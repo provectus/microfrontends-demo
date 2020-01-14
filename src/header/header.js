@@ -15,10 +15,10 @@ export default () => (
             <div className="navbar-item">Microfrontends Demo single-spa</div>
           </div>
           <div className="navbar-end">
-            <a href="/" onClick={navigateToUrl} className={'navbar-item ' + (!location.pathname.startsWith('/v2') && 'is-active')}>
+            <a href="/" onClick={navigateToUrl} className={'navbar-item ' + (!location.pathname.startsWith('/v2') ? 'is-active' : undefined)}>
               v1
             </a>
-            <a href="/v2" onClick={navigateToUrl} className={'navbar-item ' + (location.pathname.startsWith('/v2') && 'is-active')}>
+            <a href="/v2" onClick={navigateToUrl} className={'navbar-item ' + (location.pathname.startsWith('/v2') ? 'is-active' : undefined)}>
               v2
             </a>
             <div className="navbar-item">Some User</div>

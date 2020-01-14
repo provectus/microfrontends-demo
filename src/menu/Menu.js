@@ -23,7 +23,7 @@ export default () => {
                   href={getPathWithVersion(location, '')}
                   onClick={navigateToUrl}
                   className={
-                    !location.pathname.includes('products') && 'is-active'
+                    !location.pathname.includes('products') ? 'is-active' : undefined
                   }
                 >
                   Orders
@@ -34,7 +34,7 @@ export default () => {
                   href={getPathWithVersion(location, 'products')}
                   onClick={navigateToUrl}
                   className={
-                    location.pathname.includes('products') && 'is-active'
+                    location.pathname.includes('products') ? 'is-active' : undefined
                   }
                 >
                   Products
