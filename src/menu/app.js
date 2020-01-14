@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
-import Root from './root.component.jsx';
+import Menu from './Menu.js';
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: Root,
+  rootComponent: Menu,
   domElementGetter,
 });
 
@@ -24,12 +24,6 @@ export function unmount(props) {
 
 function domElementGetter() {
   // Make sure there is a div for us to render into
-  let el = document.getElementById('app2');
-  if (!el) {
-    el = document.createElement('div');
-    el.id = 'app2';
-    document.body.appendChild(el);
-  }
-
+  let el = document.getElementById('menu');
   return el;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
-import Root from './root.component.jsx';
+import Root from './Orders.js';
 
 const reactLifecycles = singleSpaReact({
   React,
@@ -24,12 +24,11 @@ export function unmount(props) {
 
 function domElementGetter() {
   // Make sure there is a div for us to render into
-  let el = document.getElementById('app1');
+  let el = document.getElementById('content');
   if (!el) {
     el = document.createElement('div');
-    el.id = 'app1';
+    el.id = 'content';
     document.body.appendChild(el);
   }
-
   return el;
 }

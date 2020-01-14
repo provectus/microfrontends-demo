@@ -1,11 +1,13 @@
 import * as singleSpa from 'single-spa';
 
 singleSpa.registerApplication('header', () =>
-  import ('../header/header.js'), () => true);
-singleSpa.registerApplication('app-1', () =>
-  import ('../app1/app1.js'), pathPrefix('/app1'));
-singleSpa.registerApplication('app-2', () =>
-  import ('../app2/app2.js'), pathPrefix('/app2'));
+  import ('../header/app.js'), () => true);
+singleSpa.registerApplication('menu', () =>
+  import ('../menu/app.js'), () => true);
+singleSpa.registerApplication('products', () =>
+  import ('../products/app.js'), pathPrefix('/orders'));
+singleSpa.registerApplication('orders', () =>
+  import ('../orders/app.js'), pathPrefix('/products'));
 
 singleSpa.start();
 

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Single SPA example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Single SPA example</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-</head>
-
-<body>
-  <!-- Load the application -->
-  <!-- TODO: versioning to avoid caching ?-->
-  <script src="/dist/common-dependencies.js"></script>
-  <script src="/dist/root-application.js"></script>
-  <div id="header"></div>
-</body>
-
+  <body>
+    <!-- Load the application -->
+    <script src="/dist/common-dependencies.js"></script>
+    <script src="/dist/root-application.js"></script>
+    
+    <!-- Main layout is here -->
+    <div id="header"></div>
+    <div style="display: flex; min-height: calc(100vh - 52px)">
+      <div
+        id="menu"
+        style="width: 300px; background: aliceblue; padding: 1.5rem;"
+      ></div>
+      <div id="content" style="flex-grow: 1; padding: 1.5rem;"></div>
+    </div>
+  </body>
 </html>
