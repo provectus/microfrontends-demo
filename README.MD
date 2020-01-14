@@ -8,3 +8,5 @@ Every "component" is a separate React application. They all use shared React ver
 ## What can be improved
 * Move every app into separate repository using `system-js` (example [https://github.com/joeldenning/coexisting-vue-microfrontends](https://github.com/joeldenning/coexisting-vue-microfrontends))
 * Create event-bus to pass messages
+* Use localStorage to store version info (?)
+* don't reuse `#content` div for all apps [source](https://github.com/CanopyTax/single-spa-vue/issues/22#issuecomment-546508688)
