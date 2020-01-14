@@ -1,5 +1,5 @@
 
-Example of microfrontends using [single-spa](https://github.com/CanopyTax/single-spa)
+## Example of microfrontends using [single-spa](https://github.com/CanopyTax/single-spa)
 
 Based on [simple-single-spa-webpack-example](https://github.com/joeldenning/simple-single-spa-webpack-example)
 
@@ -10,3 +10,8 @@ Every "component" is a separate React application. They all use shared React ver
 * Create event-bus to pass messages
 * Use localStorage to store version info (?)
 * don't reuse `#content` div for all apps [source](https://github.com/CanopyTax/single-spa-vue/issues/22#issuecomment-546508688)
+
+
+## Commands
+`npm run watch` for development
+`npm run build` to build :)
