@@ -1,14 +1,11 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    index: './src/index.js',
-    header: './src/header.app.js'
-  },
+  entry: './src/index.js',
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "[name].js"
+    path: path.join(__dirname, '/dist'),
+    filename: 'index.js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -31,14 +28,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: './index.html'
     })
-  ],
-  devServer: {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': '*',
-    },
-  },
-
+  ]
 };
