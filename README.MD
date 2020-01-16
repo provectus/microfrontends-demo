@@ -7,6 +7,10 @@ Every "component" is a separate React application. They all use [Bulma](https://
 
 Notice that even though all those apps are in the same repo, you can move them to separate repos.
 
+## Demo
+Demo is at [https://microfrontends-demo-with-cdn.now.sh/products](https://microfrontends-demo-with-cdn.now.sh/products)
+Please notice that every app is loaded from external resource [https://microfrontends-example-cdn.now.sh/](https://microfrontends-example-cdn.now.sh/)
+
 ## How to use
 
 ### 1. Develop single app
