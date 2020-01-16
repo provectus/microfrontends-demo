@@ -5,10 +5,12 @@ Based on [simple-single-spa-webpack-example](https://github.com/joeldenning/simp
 
 Every "component" is a separate React application. They all use [Bulma](https://github.com/jgthms/bulma) css-framework for UI consistency.
 
+Every application "component" is lazy-loaded when required (so if you have tons of them, they won't be loaded all at once).
+
 Notice that even though all those apps are in the same repo, you can move them to separate repos.
 
 ## Demo
-Demo is at [https://microfrontends-demo-with-cdn.now.sh/products](https://microfrontends-demo-with-cdn.now.sh/products)
+Demo is at [https://microfrontends-demo-with-cdn.now.sh/](https://microfrontends-demo-with-cdn.now.sh/)
 
 Notice that every app is loaded from external resource [https://microfrontends-example-cdn.now.sh/](https://microfrontends-example-cdn.now.sh/)
 
