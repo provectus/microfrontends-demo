@@ -9,7 +9,8 @@ Notice that even though all those apps are in the same repo, you can move them t
 
 ## Demo
 Demo is at [https://microfrontends-demo-with-cdn.now.sh/products](https://microfrontends-demo-with-cdn.now.sh/products)
-Please notice that every app is loaded from external resource [https://microfrontends-example-cdn.now.sh/](https://microfrontends-example-cdn.now.sh/)
+
+Notice that every app is loaded from external resource [https://microfrontends-example-cdn.now.sh/](https://microfrontends-example-cdn.now.sh/)
 
 ## How to use
 
