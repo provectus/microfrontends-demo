@@ -4,7 +4,8 @@
   "description": "A simple example of how to use webpack with single-spa",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --entry ./src/index.js --output-path /dist/index.js",
+    "dev": "webpack-dev-server --open --entry ./src/index.js",
+    "serve": "webpack-dev-server --entry ./src/header.app.js --output header.js",
     "build": "webpack --config webpack.config.js -p"
   },
   "author": "",
