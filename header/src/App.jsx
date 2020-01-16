@@ -14,13 +14,15 @@ const App = () => (
           <div className="navbar-brand">
             <div className="navbar-item">Microfrontends Demo single-spa</div>
           </div>
+          <div className="navbar-start">
+            <a href="/" onClick={navigateToUrl} className={'navbar-item ' + (!location.pathname.includes('products') ? 'is-active' : undefined)}>
+              Orders
+            </a>
+            <a href="/products" onClick={navigateToUrl} className={'navbar-item ' + (location.pathname.includes('products') ? 'is-active' : undefined)}>
+              Products
+            </a>
+          </div>
           <div className="navbar-end">
-            <a href="/" onClick={navigateToUrl} className={'navbar-item ' + (!location.pathname.startsWith('/v2') ? 'is-active' : undefined)}>
-              v1
-            </a>
-            <a href="/v2" onClick={navigateToUrl} className={'navbar-item ' + (location.pathname.startsWith('/v2') ? 'is-active' : undefined)}>
-              v2
-            </a>
             <div className="navbar-item">Some User</div>
           </div>
         </nav>

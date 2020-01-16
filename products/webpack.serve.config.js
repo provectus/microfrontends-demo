@@ -2,10 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/header.js',
+  entry: './src/index.single-spa.js',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'header.js',
+    filename: 'products.js',
     libraryTarget: 'system'
   },
   resolve: {
@@ -37,6 +37,7 @@ module.exports = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': '*',
     },
+    port: 5003
   },
 
 };

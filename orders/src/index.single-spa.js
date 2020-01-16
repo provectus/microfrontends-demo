@@ -1,14 +1,16 @@
+/* This file is an entrypoint for the "single-spa" version so it can work with root-application */
+
+import './setPublicPath';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import rootComponent from './App';
 import singleSpaReact from 'single-spa-react';
-import './setPublicPath';
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent,
-  domElementGetter: () => document.getElementById('header'),
+  domElementGetter: () => document.getElementById('content'),
 });
 
 export const bootstrap = reactLifecycles.bootstrap;

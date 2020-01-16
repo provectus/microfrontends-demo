@@ -6,14 +6,13 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.config.js",
     "serve": "webpack-dev-server --config webpack.serve.config.js",
-    "build": "webpack --config webpack.config.js -p"
+    "build": "webpack --config webpack.serve.config.js -p"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
     "single-spa": "^4.4.2",
     "single-spa-react": "^2.11.0",
     "systemjs-webpack-interop": "^1.1.2"
