@@ -1,9 +1,9 @@
 import React from 'react';
 import { navigateToUrl } from 'single-spa';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-export default () => (
-  <Router basename="/">
+const App = () => (
+  <BrowserRouter basename="/">
     <Route
       render={({ location }) => (
         <nav
@@ -26,5 +26,7 @@ export default () => (
         </nav>
       )}
     />
-  </Router>
+  </BrowserRouter>
 );
+
+export default App;
