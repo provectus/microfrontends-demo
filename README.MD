@@ -60,3 +60,4 @@ Now go to http://localhost:5000 in a browser. Note that you can change any of th
 * Download "react" from cdn / modify webpack config not to include react
 * Script/docker to start all apps
 * Script for building and deploying apps
+* Replace `system-js` with `ES modules` (if we don't care too much about browser support)
