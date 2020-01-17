@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "header": "http://localhost:5001/header.js",
+    "orders": "http://localhost:5002/orders.js",
+    "products": "http://localhost:5003/products.js",
+
+    "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/4.3.7/system/single-spa.min.js"
+  }
+}

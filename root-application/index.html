@@ -6,24 +6,8 @@
     <title>Root App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="importmap-type" content="systemjs-importmap" />
-    <!-- Links to all our apps, can be server-side-rendered-->
-    <script type="systemjs-importmap">
-      {
-        "imports": {
-          "header": "http://localhost:5001/header.js",
-          "orders": "http://localhost:5002/orders.js",
-          "products": "http://localhost:5003/products.js",
-
-          "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/4.3.7/system/single-spa.min.js"
-        }
-      }
-    </script>
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/single-spa/4.3.7/system/single-spa.min.js"
-      as="script"
-      crossorigin="anonymous"
-    />
+    <!-- Here we load list of our apps -->
+    <script type="systemjs-importmap" src="features.json"></script>
     <script src="https://unpkg.com/import-map-overrides@1.7.2/dist/import-map-overrides.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.1.9/system.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.1.9/extras/amd.min.js"></script>
