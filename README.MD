@@ -9,6 +9,8 @@ Every application "component" is lazy-loaded when required (so if you have tons 
 
 Notice that even though all those apps are in the same repo, you can move them to separate repos.
 
+Notice that list of micro frontends is loaded from `root-application/features.json`. Even though this file is in root application now, it can be downloaded from other server.
+
 ## Demo
 Demo is at [https://microfrontends-demo-with-cdn.now.sh/](https://microfrontends-demo-with-cdn.now.sh/)
 
